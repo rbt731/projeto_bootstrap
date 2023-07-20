@@ -1,0 +1,8 @@
+.bloco{
+    background-color: #ccc;
+    height: 50vh;
+}
+
+.bloco img{
+    min-width: 800px;
+}
