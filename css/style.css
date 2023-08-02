@@ -1,3 +1,4 @@
+/* INDEX */
 .bloco{
     background-color: #ccc;
     height: 50vh;
@@ -18,4 +19,10 @@
 .social i:hover{
     color: #0d6efd ;
     transform: scale(1.2);
+}
+
+/* EFEITO MENU ATIVO */
+
+.active{
+    border-bottom: 1px solid #fff;
 }
