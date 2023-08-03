@@ -26,3 +26,8 @@
 .active{
     border-bottom: 1px solid #fff;
 }
+
+.altura{
+    height: 300px;
+    overflow-y: scroll;
+}

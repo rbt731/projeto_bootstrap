@@ -78,16 +78,16 @@
             <section class="row mb-2">
                 <div class="col-md-12">
                     <label for="confirmar" class="mb-2">Confirmação de Email</label>
-                    <input type="text" name="confirmar" id="confirmar" class="form-control" disabled>
+                    <input type="text" name="confirmar" id="confirmar" class="form-control bg-secondary-subtle" disabled>
                 </div>
             </section>
 
             <!-- CAMPO PASSWORD: SENHA -->
             <section class="row mb-2">
                 <div class="col-md-12 input-group">
-                    <label for="senha" class="input-group-text col-form-label">Senha</label>
-                    <input type="password" name="senha" id="senha" class="form-control">
-                    <i class="fa-solid fa-eye btn btn-light fs-5"></i>
+                    <label for="senha" class="input-group-text col-form-label bg-success-subtle">Senha</label>
+                    <input type="password" name="senha" id="senha" class="form-control bg-success-subtle">
+                    <i class="fa-solid fa-eye btn bg-success-subtle fs-5 pt-2"></i>
                 </div>
             </section>
             <!-- CAMPO RADIO -->
@@ -106,6 +106,76 @@
                     <label for="fundamental" class="form-check-label">Superior</label>
                 </div>
             </section>
+
+            <div class="col-md-6 mx-auto">
+              <button class="btn btn-primary my-3 col-12">Verificar Escolaridade</button>
+            </div>
+            
+            <!-- CAMPO SWITCH: TERMOS DE CONTRATO -->
+
+            <div class="alert alert-warning">
+              <p>Você aceita os temos do contrato?</p>
+            </div>
+
+            <section class="form-check form-switch">
+              <input type="checkbox" name="escolha" id="escolha" value="escolha" class="form-check-input">
+              <label for="escolha" class="form-check-label">Exibir termos do contrato</label>
+            </section>
+
+            <!-- INFO DO CONTRATO -->
+            <section class="p-5 mt-3" id="contrato">
+              <div class="container-fluid">
+                <h1>Termos do Contrato</h1>
+                <p class="lead altura">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident excepturi, laborum quisquam quis reiciendis odio a rerum debitis dicta nemo dignissimos dolor delectus est, deserunt aliquid cupiditate qui laboriosam doloremque.
+                Eveniet enim, molestias earum, rerum dolorem vitae commodi quos fugit animi quis assumenda quasi aut nam! Ipsum vero veritatis pariatur hic saepe quas veniam velit sapiente, quibusdam repellat corrupti laborum!
+                Numquam earum accusamus eaque suscipit modi rerum nulla voluptatum molestiae, consequuntur natus vitae fuga libero a quod, nam repellendus sint dolore eum et nostrum, perspiciatis aliquid expedita exercitationem ab! Mollitia?
+                Maiores illum temporibus laboriosam atque. Facilis similique fugit omnis eaque iste ipsa porro quas? Nostrum explicabo, nesciunt magni distinctio fugit, quam tempore odit a et maiores officiis ipsam! Id, facere?
+                Soluta tempore et doloribus voluptas quae ipsa? Suscipit modi natus unde, veniam, voluptas autem cum harum inventore sed a asperiores maiores aliquam, totam voluptatum. Ducimus placeat reiciendis iusto quidem sequi.
+                Omnis, eligendi suscipit voluptatum dolor obcaecati nisi? Autem excepturi consectetur quo iste maxime iusto nemo nesciunt animi distinctio ad! Consequatur blanditiis quam voluptas itaque atque. Tempora distinctio nesciunt quo illum?
+                Ipsum eaque perspiciatis, eos iusto exercitationem dolorum excepturi est quae, id in cumque accusantium debitis repellat veniam, aliquid non placeat voluptate inventore ab magnam. Reiciendis maxime magni quam voluptate libero!
+                Voluptatum eius hic, rerum exercitationem eligendi perferendis placeat illum fugiat porro inventore beatae facilis laudantium quibusdam officia animi enim temporibus, delectus in praesentium repellat vero. Laborum ut voluptatem quam ex.
+                Maxime accusantium ipsum nihil! Minus aperiam animi ullam, excepturi repellat qui, perferendis, veritatis inventore aut veniam velit praesentium id explicabo maxime. Nesciunt id reprehenderit asperiores aliquam quod labore. Modi, quos.
+                Explicabo libero doloremque odit quaerat aliquid est at itaque nemo aspernatur nesciunt consequatur dignissimos architecto, ab commodi minus omnis ipsum iure iusto veritatis quos? Veritatis vel tempora eaque incidunt eveniet.</p>
+              
+              <hr>
+
+              <div class="form-check">
+                <input type="checkbox" name="concordo" id="concordo" value="concordo" class="form-check-input">
+                <label for="concordo" class="form-check-label">Concordo</label>
+              </div>
+              </div>
+
+            </section>
+
+            <!-- CAMPO SELECT -->
+            <section class="row mb-2">
+              <label class="col-form-label-lg">Em qual setor gostaria de trabalhar?</label>
+              <select name="trabalho" class="form-select">
+                <option value="">Escolha uma opção...</option>
+                <option value="RH">RH</option>
+                <option value="Tecnologia">Tecnologia</option>
+                <option value="Financeiro">Financeiro</option>
+              </select>
+            </section>
+
+            <!-- CAMPO TEXTAREA: COMENTÁRIO -->
+
+            <section class="row mb-2">
+              <div class="col-md-12">
+                <label for="mensagem" class="mb-2">Comente sobre o setor escolhido</label>
+                <textarea name="mensagem" id="mensagem" placeholder="descreva brevemente sua opinião" class="form-control"></textarea>
+              </div>
+            </section>
+
+            <!-- CAMPO DE COR -->
+            <section class="row mb-2">
+              <label for="cor" class="col-md-4">Escolha uma cor para o site</label>
+              <input type="color" name="cor" id="cor" class="col-md-8 p-0">
+            </section>
+
+            <div class="col-md-6 mx-auto my-5">
+              <button type="submit" class="btn btn-primary col-md-12">Enviar Formulario</button>
+            </div>
         </form>
 
     </main>
