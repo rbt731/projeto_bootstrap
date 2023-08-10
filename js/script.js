@@ -32,7 +32,7 @@ idade.addEventListener("blur", function(){
 
 let endereco = document.querySelector("#endereco")
 
-endereco.addEventListener("blur", function(){
+endereco.addEventListener("blur", ()=>{
     if(endereco.value.length >= 35){
     alert("O endereço esta muito grande!")
         endereco.style.border = "2px solid red"
@@ -95,5 +95,68 @@ btn_Escolaridade.addEventListener("click", (evento)=>{
     // console.log(evento)
     evento.preventDefault() // Esta função irá impedir o comportamento padrão do botão
 
-    console.log(escolaridade[2])
+    // console.log(escolaridade[2])
+
+    for(let itens of escolaridade){
+        // console.log(itens)
+        if(itens.checked){
+            // alert("Sua escolaridade é "+itens.value)
+            alert(`Sua escolaridade é ${itens.value}`) //isto é um template string, outra forma de concatensar
+            // let opcao = confirm("Tem certeza?")
+            // console.log(opcao)
+            confirm("Tem certeza?")
+        }
+    }
+})
+
+let escolha = document.querySelector("#escolha")
+let contrato = document.querySelector("#contrato")
+
+contrato.classList.add("d-none")
+
+escolha.addEventListener("change", ()=>{
+    // console.log(escolha)
+    if(escolha.checked){
+        contrato.classList.add("d-block")
+        contrato.classList.remove("d-none")
+    }
+    else{
+        contrato.classList.remove("d-block")
+        contrato.classList.add("d-none")
+    }
+})
+
+let concordo = document.querySelector("#concordo")
+
+concordo.addEventListener("change", ()=>{
+    if(concordo.checked){
+        // console.log(concordo)
+        alert("Obrigado pela escolha")
+    }
+    else{
+        alert("Poxa, muito triste sua desisão")
+        let mensagem = prompt("diga porque você desmarcou") //cria uma caixa de texto
+    }
+})
+
+let trabalho = document.querySelector(".form-select")
+
+trabalho.addEventListener("change", ()=>{
+    //  console.log(trabalho.options)
+
+    for(let itens of trabalho){
+        if(itens.selected){
+            // console.log(itens.value)
+            if(itens.value == "RH"){
+                trabalho.style.backgroundColor = "cyan"
+            }
+            if(itens.value == "Tecnologia"){
+                trabalho.style.backgroundColor = "orange"
+            }
+            if(itens.value == "Financeiro"){
+                trabalho.style.color = "white"
+                trabalho.style.backgroundColor = "pink"
+            }
+        }
+    }
 })
